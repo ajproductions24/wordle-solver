@@ -3,7 +3,6 @@ import discord
 from discord.ext.commands import Bot
 from discord.ext import commands
 import collections, random
-from keep_alive import keep_alive
 import os
 
 #Open Words List
