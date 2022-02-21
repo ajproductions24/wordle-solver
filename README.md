@@ -1,2 +1,2 @@
-# wordle-solver
-A public discord bot to solve your stand 5-letter wordles. 
+# Wordle Solver Discord Bot
+A public discord bot to solve your standard 5-letter Wordles. 
