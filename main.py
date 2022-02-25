@@ -70,7 +70,7 @@ async def wordle(ctx):
       def check(m):
         return ctx.channel == m.channel and ctx.author == m.author
       try: 
-        msg = await bot.wait_for('message', check=check, timeout=20)
+        msg = await bot.wait_for('message', check=check, timeout=30)
         message = msg.content
         if len(message) == 5 and message.isdigit():
           score = [int(char) for char in msg.content if char in "012"]
