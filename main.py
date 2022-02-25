@@ -32,18 +32,13 @@ async def on_ready():
 #On Server Join
 @bot.event
 async def on_guild_join(guild):
-  not_joined = True
   print(f'I joined {guild}!')
-  while not_joined:
-    for channel in guild.text_channels:
-      if not_joined == True and channel.permissions_for(guild.me).send_messages:
-        embed=discord.Embed(title="Wordle Solver Discord Bot!", url='https://discord.com/api/oauth2/authorize?client_id=944380945644007434&permissions=412317207616&scope=bot', description="Thanks for adding the ***Wordle Solver Discord Bot*** ! To get started, type ``=wordle`` or ``=commands``. For any questions, type ``=help``. Good luck solving wordles!", color=0x5539CC)
-        await channel.send(embed=embed)
-        not_joined = None
-      else:
-        not_joined = True
-    break
-
+  for channel in guild.text_channels:
+    if channel.permissions_for(guild.me).send_messages:
+      embed=discord.Embed(title="Wordle Solver Discord Bot!", url='https://discord.com/api/oauth2/authorize?client_id=944380945644007434&permissions=412317207616&scope=bot', description="Thanks for adding the ***Wordle Solver Discord Bot*** ! To get started, type ``=wordle`` or ``=commands``. For any questions, type ``=help``. Good luck solving wordles!", color=0x5539CC)
+      await channel.send(embed=embed)
+      return
+      
 #Check Value Of Database
 @bot.command(name='check')
 async def check(ctx):
