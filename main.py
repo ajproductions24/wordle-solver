@@ -119,16 +119,6 @@ async def command_s(ctx):
   embed.set_footer(text="Information requested by: {}".format(ctx.author.display_name))
   await ctx.send(embed=embed)
 
-#Bot Shutdown Command
-@bot.command(name='shutdown', pass_context=True)
-@commands.is_owner()
-async def shutdown(ctx):
-  embed=discord.Embed(title="Bot Shutdown", description=f"The **Wordle Solver Discord Bot** is shutting down.", color=0x5539CC)
-  embed.set_footer(text="Information requested by: {}".format(ctx.author.display_name))
-  await ctx.send(embed=embed)
-  print(f'Program is shutting down. - {ctx.author.display_name}')
-  exit()
-
 #Bot Stats Command
 @bot.command(name='stats')
 async def stats(ctx):
