@@ -33,7 +33,7 @@ It's good to have prior knowledge of Python, Discord.py library and Discord. If 
 
 # About
 
-The <span style=color:#5539CC> [***Wordle Solver Discord Bot***](https://discord.com/api/oauth2/authorize?client_id=944380945644007434&permissions=412317207616&scope=bot) <span style="color:white"> was created for individuals that have a hard time completing standard wordles. We integrated this program into discord, for ease of access. The bot is hosted online 24/7 and has a bank of over *5,000 5-letter words*.
+The <span style=color:#5539CC> [***Wordle Solver Discord Bot***](https://discord.com/api/oauth2/authorize?client_id=944380945644007434&permissions=412317207616&scope=bot) <span style="color:white"> was created for individuals that have a hard time completing standard wordles. We integrated this program into discord, for ease of access. The bot is hosted online 24/7 and has a bank of over *2,000 5-letter words*.
 
 ### *What is This?*
 
